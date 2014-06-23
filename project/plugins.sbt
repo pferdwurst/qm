@@ -6,6 +6,9 @@ resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/release
 
 resolvers += Resolver.file("Local", file( Path.userHome.absolutePath + "/.ivy2/local"))(Resolver.ivyStylePatterns)
 
+// OpenCast repo
+resolvers += "Opencase" at "http://repository.opencastproject.org/nexus/content/repositories/public/"
+    
 // The Play plugin
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.3.0")
 
